@@ -1,3 +1,5 @@
-const app = require("./src/app") 
+const App = require("./src/app")
 
-app.listen(8000, () => console.log("Сервер запущен"))
+const app = new App()
+
+app.app.listen(8000, () => console.log("Сервер запущен"))
